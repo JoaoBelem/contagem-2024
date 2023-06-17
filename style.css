@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  background: linear-gradient(-90deg, rgb(96, 102, 190), rgb(165, 166, 182));
+  color: white;
+  font-family: sans-serif;
+} 
+h1{
+  margin: 120px 0;
+}
+#flex{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#contador{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0 3rem;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  background: linear-gradient(90deg, rgb(0, 180, 180), rgb(189, 88, 189));
+  user-select: none;
+}
+#contador p{
+  margin: 0;
+  font-size: 72px;
+  position: relative;
+}
+#contador p:last-child{
+  margin: 0;
+}
+/* #contador p:not(:nth-child(4))::after{
+  content: ":";
+  position: absolute;
+  right: -30px;
+  top: -4px;
+} */
+.special{
+  text-shadow: 0 0 10px red;
+}
+p.mensagem{
+  grid-column: span 4;
+}
